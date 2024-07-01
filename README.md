@@ -4,12 +4,13 @@
 When the sensor detects no vheicles/ all vehicles have passed, it signals red to country road and resumes Highway traffic.<br/>
 This module uses FSM(Finite State Machince) in order to make the traffic flow smoother.<br/>
 ## FSM
-**States**         **highwayrd**   **countryrd** <br/>
-S0        -     GREEN    |   RED<br/>
-S1             YELLOW   |   RED<br/>
-S2             RED      |   RED<br/>
-S3             RED     |    GREEN<br/>
-S4             RED      |   YELLOW<br/>
+|**States**  |       **highwayrd**  | **countryrd** <br/>|
+| --- | --- | --- |
+|S0          |   GREEN    |   RED<br/>|
+|S1           |  YELLOW   |   RED<br/>|
+|S2          |   RED      |   RED<br/>|
+||S3          |   RED     |    GREEN<br/>|
+S4           |  RED      |   YELLOW<br/>|
 
 ## OUTPUT
                    0 highway road = 10, country road = 00 car on country road =0
