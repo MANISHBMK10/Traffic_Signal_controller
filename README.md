@@ -1,5 +1,16 @@
 # Traffic_Signal_controller
- Traffic_Signal_controller allows the traffic to flow smoothly between Highway and Country road
+ Traffic_Signal_controller allows the traffic to flow smoothly between Highway and Country road.<br/>
+ The Highway signal is green, as many vehicles move on the Highway road. When there's a vehicle on country road, the sensor detects the vehicle and turns the signal from green to red on the highway road and signals green for country road.<br/>
+When the sensor detects no vheicles/ all vehicles have passed, it signals red to country road and resumes Highway traffic.<br/>
+This module uses FSM(Finite State Machince) in order to make the traffic flow smoother.<br/>
+## FSM
+**States**         **highwayrd**   **countryrd** <br/>
+S0             GREEN       RED<br/>
+S1             YELLOW      RED<br/>
+S2             RED         RED<br/>
+S3             RED         GREEN<br/>
+S4             RED         YELLOW<br/>
+
 ## OUTPUT
                    0 highway road = 10, country road = 00 car on country road =0
                  250 highway road = 10, country road = 00 car on country road =1
